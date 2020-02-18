@@ -1,7 +1,3 @@
-# Submitting project to ETHDenver
- 
-## Name
-
 **Harmony Charity DAOs**
  
 ## Tagline
