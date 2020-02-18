@@ -1,4 +1,4 @@
-**Harmony Charity DAOs**
+# Harmony Charity DAOs**
  
 ## Tagline
 
