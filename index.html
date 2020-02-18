@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+  </head>
+  <body>
+    <h1>Hi there! This is a test of interacting with a Moloch Dao! It works on Mainnet.</h1>
+
+    <p>
+      Public Methods
+    </p>
+
+    <!-- Creating a Method Instance for members -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="members"
+      data-dh-property-method-id="013"
+    >
+      <h2>
+        Members:
+      </h2>
+      <h3>
+        (Hint, try address: 0xbaf2d86e1224b5fc9121495fe2b55a273d6f2bae)
+      </h3>
+      <input
+        data-dh-property-method-id="013"
+        data-dh-property-input-name=""
+        placeholder="Member Address(address)"
+      />
+      <button data-dh-property-method-id="013" data-dh-property-invoke="true">
+        Check Member
+      </button>
+
+      <div>
+        DelegateKey:
+        <span
+          data-dh-property-method-id="013"
+          data-dh-property-output-name="delegateKey"
+        >
+          ...
+        </span>
+      </div>
+
+      <div>
+        Shares:
+        <span
+          data-dh-property-method-id="013"
+          data-dh-property-output-name="shares"
+        >
+          ...
+        </span>
+      </div>
+
+      <div>
+        Exists:
+        <span
+          data-dh-property-method-id="013"
+          data-dh-property-output-name="exists"
+        >
+          ...
+        </span>
+      </div>
+
+      <div>
+        Highest proposal index in which member voted yes:
+        <span
+          data-dh-property-method-id="013"
+          data-dh-property-output-name="highestIndexYesVote"
+        >
+          ...
+        </span>
+      </div>
+    </div>
+    
+    
+
+    <!-- Creating a Method Instance for getMemberProposalVote -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="getMemberProposalVote"
+      data-dh-property-method-id="014"
+    >
+      <h2>
+        Members:
+      </h2>
+
+      <input
+        data-dh-property-method-id="014"
+        data-dh-property-input-name="memberAddress"
+        placeholder="Member Address(address)"
+      />
+
+      <input
+        data-dh-property-method-id="014"
+        data-dh-property-input-name="proposalIndex"
+        placeholder="Proposal Index(uint256)"
+      />
+      
+      <button data-dh-property-method-id="014" data-dh-property-invoke="true">
+        Check Member
+      </button>
+
+      <span data-dh-property-method-id="014" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for periodDuration -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="periodDuration"
+      data-dh-property-method-id="000"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Period Duration:
+      </h2>
+      <span data-dh-property-method-id="000" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for votingPeriodLength -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="votingPeriodLength"
+      data-dh-property-method-id="001"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Voting Period Length:
+      </h2>
+      <span data-dh-property-method-id="001" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for gracePeriodLength -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="gracePeriodLength"
+      data-dh-property-method-id="002"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Grace Period Length:
+      </h2>
+      <span data-dh-property-method-id="002" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for abortWindow -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="abortWindow"
+      data-dh-property-method-id="003"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Abort Window:
+      </h2>
+      <span data-dh-property-method-id="003" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for proposalDeposit -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="proposalDeposit"
+      data-dh-property-method-id="004"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Proposal Deposit:
+      </h2>
+      <span
+        data-dh-property-method-id="004"
+        data-dh-property-outputs="true"
+        data-dh-modifier-contract-units="wei"
+        data-dh-modifier-display-units="ether"
+      >
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for dilutionBound -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="dilutionBound"
+      data-dh-property-method-id="005"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Dilution Bound:
+      </h2>
+      <span data-dh-property-method-id="005" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for processingReward -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="processingReward"
+      data-dh-property-method-id="006"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Processing Reward:
+      </h2>
+      <span data-dh-property-method-id="006" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for summoningTime -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="summoningTime"
+      data-dh-property-method-id="007"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        summoningTime:
+      </h2>
+      <span data-dh-property-method-id="007" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for approvedToken -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="approvedToken"
+      data-dh-property-method-id="008"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Approved ERC20 Token Address:
+      </h2>
+      <span data-dh-property-method-id="008" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for guildBank -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="guildBank"
+      data-dh-property-method-id="009"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        GuildBank Address:
+      </h2>
+      <span data-dh-property-method-id="009" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for totalShares -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="totalShares"
+      data-dh-property-method-id="010"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Total Shares:
+      </h2>
+      <span data-dh-property-method-id="010" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <!-- Creating a Method Instance for totalSharesRequested -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="totalSharesRequested"
+      data-dh-property-method-id="011"
+      data-dh-property-auto-invoke="true"
+    >
+      <h2>
+        Total Shares Requested:
+      </h2>
+      <span data-dh-property-method-id="011" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <hr />
+
+    <!-- Creating a Method Instance for submitProposal -->
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-contract-name="publicmoloch"
+      data-dh-property-method-name="submitProposal"
+      data-dh-property-method-id="012"
+    >
+      <h2>
+        Submit Proposal:
+      </h2>
+
+      <input
+        data-dh-property-method-id="012"
+        data-dh-property-input-name="applicant"
+        placeholder="applicant(address)"
+      />
+
+      <input
+        data-dh-property-method-id="012"
+        data-dh-property-input-name="tokenTribute"
+        placeholder="tokenTribute(uint256)"
+      />
+
+      <input
+        data-dh-property-method-id="012"
+        data-dh-property-input-name="sharesRequested"
+        placeholder="sharesRequested(uint256)"
+      />
+
+      <input
+        data-dh-property-method-id="012"
+        data-dh-property-input-name="details"
+        placeholder="details(string)"
+      />
+
+      <button data-dh-property-method-id="012" data-dh-property-invoke="true">
+        Submit Proposal
+      </button>
+      <br />
+
+      Transaction Hash:
+      <span data-dh-property-method-id="012" data-dh-property-outputs="true">
+        ...
+      </span>
+    </div>
+
+    <button data-dh-feature="network" data-dh-property-enable="true">
+      Enable Web3
+    </button>
+    <script
+      src="https://package.dapphero.io/main.js"
+      id="dh-apiKey"
+      data-api="1581611319436x547950605830979600"
+    ></script>
+  </body>
+</html>
